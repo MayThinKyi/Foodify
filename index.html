@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="query.css">
+    <title>Foodify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class="">
+    <!--Header Start-->
+    <header class="mx-0 me-0 align-content-center">
+        <!--Small Nav Start-->
+        <nav class=" d-block d-lg-none mb-5 mx-0 d-lg-none justify-content-between px-2 px-lg-3 py-4 fs-3 d-flex">
+            <h2 class="fs-1">Foodify</h2>
+
+            <i class="fa-solid fa-bars fs-1 " style=" color:#FF9900" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop"></i>
+
+            <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel" style="height:80vh">
+                <div class="offcanvas-header">
+                    <h2 class="fs-1">Foodify</h2>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class=" d-flex flex-column justify-content-center align-items-center mb-5 ">
+                        <li class="mb-5 mt-3"> <a href="#menu" style="font-weight: 600;" class="text-black fs-3">Menu</a></li>
+                        <li class="mb-5 "> <a href="#how-it-works" style="font-weight:600" class="text-black fs-3">How it works</a></li>
+                        <li class="mb-5 "> <a href="#testmonials" style="font-weight:600" class="text-black fs-3">Testmonials</a></li>
+                        <li class="mb-5 "> <a href="#contact" style="font-weight:600" class="text-black fs-3">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </nav>
+        <!--Small Nav Start-->
+
+
+        <!--
+                    <div class="btnContainer col-md-3 d-md-flex d-none ">
+            <div>
+                <a class="signInBtn ">Sign in</a>
+                <a class="signUpBtn ">Sign up</a>
+            </div>
+        </div>
+        </div>
+    -->
+        <nav class=" py-4 px-5 d-none d-lg-flex nav-lg">
+            <div class="col-lg-3">
+                <div>
+                    <h2 class="fs-1">Foodify</h2>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div>
+                    <ul class=" d-flex align-items-center pt-4  text-white fs-4">
+                        <li class="text-black"> <a class="" href="#menu" style="font-weight: 600;">Menu</a></li>
+                        <li class="text-black"> <a class="" href="#how-it-works" style="font-weight:600">How it works</a></li>
+                        <li class="text-black"> <a class="" href="#testmonials" style="font-weight:600">Testmonials</a></li>
+                        <li class="text-black "> <a class="" href="#contact" style="font-weight:600">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="btnContainer text-end">
+                    <div>
+                        <a class="signInBtn ">Sign in</a>
+                        <a class="signUpBtn ">Sign up</a>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+
+        <div class="introContainer d-flex flex-column justify-content-center align-items-center  text-center mt-5 text-white " style="height: 400px;">
+            <h1 class="intro mx-auto col-md-8 mt-5 px-2  py-3 fs-1">
+                Order favorite meals, delivered hot and fresh to your door
+            </h1>
+            <a class="orderNowBtn text-white mt-0 px-4 py-3 ">Order now</a>
+
+        </div>
+    </header>
+    <!--Header End-->
+    <!--Menu Start-->
+    <section id="menu" class="menu">
+        <div class="row  bg-white text-black p-lg-5 p-3 my-3">
+            <div class="col-lg-7 col-12">
+                <h2 class="fw-bold " style="font-size: 2rem;">Here is our best menus</h2>
+                <p class="fs-5 text-muted">We provide wide variety of food with best quality.</p>
+            </div>
+            <div class="col-lg-5 col-12">
+                <div class="inputContainer border-light border-1 rounded-pill d-flex flex-wrap py-lg-4  align-items-center gap-4">
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass  me-lg-2" style="font-size: 18px;"></i>
+                        <input class="border-0 fs-5 mx-0 " style="outline: none;" type="text" placeholder="Explore your favourite meals...">
+                    </div>
+                    <div style="vertical-align: middle;"> <a class="orderNowBtn text-white mt-3 px-4 py-3 ms-5">Search</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0" style="height:720px">
+            <div class="col-lg-3 d-flex flex-column h-100">
+                <div class="image h-50">
+                    <img class="h-100 position-relative " src="./images/menu1.jpg" alt="" style="object-fit:cover" width="100%">
+
+                    <div class=" image__overlay1 d-flex flex-column align-items-center text-center">
+                        <div class="image__title">Pizza</div>
+                        <p class="image__description ">
+                            <div class="d-flex gap-1  align-items-center " style="color:#FF9900 ">
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star-half-stroke "></i>
+                                <span class="text-black  ">[ 4.7 ]</span>
+                            </div>
+                            <div class=" text-black mt-4 fs-5">We analyze the food rankings for better services</div>
+                            <div class="d-flex mt-3 align-items-center  ">
+                                <h4 class="fw-bold text-black me-5">$11.39</h4>
+                                <div class="text-white  fw-bold px-2 py-1 rounded-2 " style="background-color: #FF9900; ">
+                                    <i class="fa-solid fa-cart-shopping "></i>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="image h-50">
+                    <img class="h-100 position-relative " src="./images/menu5.jpg" alt="" style="object-fit:cover" width="100%">
+                    <div class=" image__overlay2  d-flex flex-column align-items-center text-center">
+                        <div class="image__title mt-3 mb-0">Cheese Hamburger</div>
+                        <p class="image__description ">
+                            <div class="d-flex gap-1  align-items-center " style="color:#FF9900 ">
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star-half-stroke "></i>
+                                <span class="text-black fs-5 ">[ 4.3 ]</span>
+                            </div>
+                            <div class="fs-5 text-black mt-2">We analyze the food rankings for better services</div>
+                            <div class="d-flex mt-2 align-items-center  ">
+                                <h4 class="fw-bold text-black me-5">$5.99</h4>
+                                <div class="text-white fs-2 fw-bold px-2 py-1 rounded-2 " style="background-color: #FF9900; ">
+                                    <i class="fa-solid fa-cart-shopping "></i>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-column h-100">
+                <div class="image h-50">
+                    <img class="h-100 position-relative " src="./images/menu2.jpg" alt="" style="object-fit:cover" width="100%">
+                    <div class=" image__overlay3  d-flex flex-column align-items-center text-center">
+                        <div class="image__title mt-3 mb-0">Beef Hamburger</div>
+                        <p class="image__description ">
+                            <div class="d-flex gap-1  align-items-center " style="color:#FF9900 ">
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star-half-stroke "></i>
+                                <span class="text-black fs-5 ">[ 4.3 ]</span>
+                            </div>
+                            <div class="fs-5 text-black mt-2">We analyze the food rankings for better services</div>
+                            <div class="d-flex mt-2 align-items-center  ">
+                                <h4 class="fw-bold text-black me-5">$6.99</h4>
+                                <div class="text-white fs-2 fw-bold px-2 py-1 rounded-2 " style="background-color: #FF9900; ">
+                                    <i class="fa-solid fa-cart-shopping "></i>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="image h-50">
+                    <img class="h-100 position-relative " src="./images/menu6.jpg" alt="" style="object-fit:cover" width="100%">
+                    <div class=" image__overlay3  d-flex flex-column align-items-center text-center">
+                        <div class="image__title mt-3 mb-0">Tomyang Soup</div>
+                        <p class="image__description ">
+                            <div class="d-flex gap-1  align-items-center " style="color:#FF9900 ">
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star-half-stroke "></i>
+                                <span class="text-black fs-5 ">[ 4.5 ]</span>
+                            </div>
+                            <div class="fs-5 text-black mt-2">We analyze the food rankings for better services</div>
+                            <div class="d-flex mt-2 align-items-center  ">
+                                <h4 class="fw-bold text-black me-5">$4.99</h4>
+                                <div class="text-white fs-2 fw-bold px-2 py-1 rounded-2 " style="background-color: #FF9900; ">
+                                    <i class="fa-solid fa-cart-shopping "></i>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 d-flex flex-column h-100">
+                <div class="image h-50">
+                    <img class="h-100 position-relative " src="./images/menu3.jpg" alt="" style="object-fit:cover" width="100%">
+                    <div class=" image__overlay3  d-flex flex-column align-items-center text-center">
+                        <div class="image__title mt-3 mb-0">Beef Steak</div>
+                        <p class="image__description ">
+                            <div class="d-flex gap-1  align-items-center " style="color:#FF9900 ">
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star-half-stroke "></i>
+                                <span class="text-black fs-5 ">[ 4.7 ]</span>
+                            </div>
+                            <div class="fs-5 text-black mt-2">We analyze the food rankings for better services</div>
+                            <div class="d-flex mt-2 align-items-center  ">
+                                <h4 class="fw-bold text-black me-5">$16.99</h4>
+                                <div class="text-white fs-2 fw-bold px-2 py-1 rounded-2 " style="background-color: #FF9900; ">
+                                    <i class="fa-solid fa-cart-shopping "></i>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+                <div class="image h-50">
+                    <img class="h-100 position-relative " src="./images/menu7.jpg" alt="" style="object-fit:cover" width="100%">
+                    <div class=" image__overlay3  d-flex flex-column align-items-center text-center">
+                        <div class="image__title mt-3 mb-0">BBQ</div>
+                        <p class="image__description ">
+                            <div class="d-flex gap-1  align-items-center " style="color:#FF9900 ">
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star-half-stroke "></i>
+                                <span class="text-black fs-5 ">[ 4.9 ]</span>
+                            </div>
+                            <div class="fs-5 text-black mt-2">We analyze the food rankings for better services</div>
+                            <div class="d-flex mt-2 align-items-center  ">
+                                <h4 class="fw-bold text-black me-5">$25.99</h4>
+                                <div class="text-white fs-2 fw-bold px-2 py-1 rounded-2 " style="background-color: #FF9900; ">
+                                    <i class="fa-solid fa-cart-shopping "></i>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-3 d-flex flex-column h-100">
+                <div class="image h-100">
+                    <img class="h-100 position-relative " src="./images/menu4.jpg" alt="" style="object-fit:cover" width="100%">
+                    <div class=" image__overlay3  d-flex flex-column align-items-center text-center">
+                        <div class="image__title mt-3 mb-0">Noodle</div>
+                        <p class="image__description ">
+                            <div class="d-flex gap-1  align-items-center " style="color:#FF9900 ">
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star "></i>
+                                <i class="fa-solid fa-star-half-stroke "></i>
+                                <span class="text-black fs-5 ">[ 4.7 ]</span>
+                            </div>
+                            <div class="fs-5 text-black mt-2">We analyze the food rankings for better services</div>
+                            <div class="d-flex mt-2 align-items-center  ">
+                                <h4 class="fw-bold text-black me-5">$3.99</h4>
+                                <div class="text-white fs-2 fw-bold px-2 py-1 rounded-2 " style="background-color: #FF9900; ">
+                                    <i class="fa-solid fa-cart-shopping "></i>
+                                </div>
+                            </div>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!--Menu End-->
+
+    <!--How it works Start-->
+    <section id="how-it-works" class="how-it-works mt-lg-0 how-it-works" style="background-color: #F8F8F8;">
+        <div class="row g-0">
+            <div class="col-md-6 ">
+                <div>
+                    <img src="./images/1.jpg" class="md:h-100 h-100" alt=" " width="100% " height="550px " style="object-fit:cover; ">
+                </div>
+            </div>
+            <div class="col-md-6 col-12 py-5 m-auto d-flex justify-content-center ">
+                <div style="width:80% ">
+                    <div class=" d-flex " style="font-size: 60px;color: #FF9900; "><i class=" fa-solid fa-mobile-screen-button me-2 "></i><i class=" fa-solid fa-wifi "></i></div>
+                    <div class="row my-4 ">
+                        <h3>Order online</h3>
+                    </div>
+                    <div class="row " style="font-weight:400;font-size:1.2rem ">
+                        <p>Choose your favorite meals from our website and order easily with wide variety payment services by staying in your home</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row g-0 ">
+            <div class="col-md-6 col-12 py-5 m-auto d-flex justify-content-center ">
+                <div style="width:80% ">
+                    <div class=" d-flex  " style="font-size: 60px;color: #FF9900; "><i class="fa-solid fa-stopwatch "></i></div>
+                    <div class="row my-4 ">
+                        <h3>Ready in 20 mins</h3>
+                    </div>
+                    <div class="row " style="font-weight:400;font-size:1.2rem ">
+                        <p>You're only twenty minutes away from your delicious meals ready to deliver your home. Our best chefs make ensure you're 100% happy.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 " style="height: 500px; ">
+                <img class="md:h-100 h-100 " src="./images/2.jpg " alt=" " width="100% " height="100% " style="object-fit:cover; ">
+            </div>
+        </div>
+        <div class="row g-0 ">
+            <div class="col-md-6 " style="height: 500px; ">
+                <img src="./images/3.jpg " class="md:h-100 h-100 " style="object-fit:cover; " alt=" " width="100% " height="100% ">
+            </div>
+            <div class="col-md-6 col-12 py-5 m-auto d-flex justify-content-center ">
+                <div style="width:80% ">
+                    <div class=" d-flex " style="font-size: 60px;color: #FF9900; "><i class="fa-solid fa-truck "></i></div>
+                    <div class="row my-4 ">
+                        <h3>Fast Delivery</h3>
+                    </div>
+                    <div class="row " style="font-weight:400;font-size:1.2rem ">
+                        <p>We connect with the best delivery services in each town to ensure that your order is ready to your door as fast as possible.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--How it works End-->
+    <!--Testimonials Start-->
+    <section id="testmonials" class="testimonials me-0" style="background-color: #FFF6E9; ">
+        <div class="row text-center justify-content-center mb-2 mb-lg-0">
+            <h2 class="fw-bold text-black mt-5" style="font-size: 3rem;font-weight:700;">Testimonials</h2>
+            <p class="text-center fs-5">What our customers are saying</p>
+        </div>
+        <div class="row  justify-content-center mt-lg-5 px-5 gap-0 gap-lg-2">
+            <div class="col-lg-3 col-12 p-0 p-lg-5 p-md-3 mb-lg-0 mb-5 mt-5 mt-lg-0">
+                <div class="d-flex flex-column">
+                    <img src="./images/c1.jpg" class="mb-3" style="border-radius:50%" width="70px" height="70px" alt="">
+                    <p class="mb-3 " style="font-size:1.2rem">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+                    <p class="" style="font-size: 1.2rem;">— Stephen</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-12 p-0 p-lg-5 p-md-3 mb-lg-0 mb-5">
+                <div class="d-flex flex-column">
+                    <img src="./images/c2.jpg" class="mb-3" style="border-radius:50%" width="70px" height="70px" alt="">
+                    <p class="mb-3 " style="font-size:1.2rem">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+                    <p class="" style="font-size: 1.2rem;">— Harry</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-12 p-0 p-lg-5 p-md-3 mb-lg-0 mb-5">
+                <div class="d-flex flex-column">
+                    <img src="./images/c3.jpg" class="mb-3" style="border-radius:50%" width="70px" height="70px" alt="">
+                    <p class="mb-3 " style="font-size:1.2rem">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+                    <p class="" style="font-size: 1.2rem;">— Alexa
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-12 p-0 p-lg-5 p-md-3 mb-lg-0 mb-5">
+                <div class="d-flex flex-column">
+                    <img src="./images/c4.jpg" class="mb-3" style="border-radius:50%" width="70px" height="70px" alt="">
+                    <p class="mb-3 " style="font-size:1.2rem">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+                    <p class="" style="font-size: 1.2rem;">— Robert</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-12 p-0 p-lg-5 p-md-3 mb-lg-0 mb-5">
+                <div class="d-flex flex-column">
+                    <img src="./images/c5.jpg" class="mb-3" style="border-radius:50%" width="70px" height="70px" alt="">
+                    <p class="mb-3" style="font-size:1.2rem">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+                    <p class="" style="font-size: 1.2rem;">— Micheal</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-12 p-0 p-lg-5 p-md-3 mb-lg-0 mb-5">
+                <div class="d-flex flex-column">
+                    <img src="./images/c6.jpg" class="mb-3" style="border-radius:50%" width="70px" height="70px" alt="">
+                    <p class="mb-3 " style="font-size:1.2rem">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+                    <p class="" style="font-size: 1.2rem;"> — Alesha</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-12 p-0 p-lg-5 p-md-3 mb-lg-0 mb-5">
+                <div class="d-flex flex-column">
+                    <img src="./images/c7.jpg" class="mb-3 " style="border-radius:50%" width="70px" height="70px" alt="">
+                    <p class="mb-3 " style="font-size:1.2rem">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+                    <p class="" style="font-size: 1.2rem;">— John</p>
+                </div>
+
+            </div>
+            <div class="col-lg-3 col-12 p-0 p-lg-5 p-md-3 mb-lg-0 mb-5">
+                <div class="d-flex flex-column">
+                    <img src="./images/c8.jpg" class="mb-3" style="border-radius:50%" width="70px" height="70px" alt="">
+                    <p class="mb-3 " style="font-size:1.2rem">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+                    <p class="" style="font-size: 1.2rem;">— Ashley</p>
+                </div>
+
+            </div>
+        </div>
+
+        </div>
+    </section>
+    <!--Testimonials End-->
+    <!--Contact Start-->
+    <section id="contact" class="contact">
+        <div class="row mx-lg-0 mt-lg-0 pt-5 mt-0 justify-content-center" style="background-color: #F8F8F8;">
+            <div class="rounded-5 row p-lg-5 p-3 w-75" style="background-color: #F8F8F8;">
+                <div class="col-lg-7 col-12 mt-5">
+                    <div class="row">
+                        <h2 class="fw-bold text-black" style="font-size:3rem">Get your first meal for free!</h2>
+                    </div>
+                    <div class=" d-flex flex-wrap gap-lg-5 mt-lg-5">
+                        <div class="d-flex flex-column mb-5 mb-lg-0">
+                            <label for="firstName" class="text-sm">First name</label>
+                            <input type="text" class="bg-transparent" style="outline: none;border:none;border-bottom:1px solid black;">
+                        </div>
+                        <div class="d-flex flex-column mb-5 mb-lg-0" ">
+                            <label for="firstName " class="text-sm ">Last name</label>
+                            <input type="text " class="bg-transparent " style="outline: none;border:none;border-bottom:1px solid black; ">
+                        </div>
+                    </div>
+                    <div class="row mt-lg-5 mb-4 ">
+                        <label for=" " class="text-sm "">Email</label>
+                            <input type="email " class="bg-transparent " style="outline: none;border:none;border-bottom:1px solid black; ">
+                        </div>
+                        <div class="mt-lg-5 d-flex py-lg-3 justify-content-end ">
+                            <a class="orderNowBtn text-white mt-3 px-5 py-3 ">Join now</a>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-lg-flex d-none">
+                        <img class="rounded-5 " src="./images/contact.jpg " alt=" " height="100% " width="100% " style="object-fit:cover; ">
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--Contact End-->
+    <!--Footer Start-->
+    <footer class="footer m-0 mt-lg-0 pt-5" style="background-color: #FFF6E9;">
+        <div class="row px-5 me-0 pt-lg-0 pt-5 justify-content-center">
+            <div class="mt-3 col-lg-2">
+                <div class="row mb-3">
+                    <h2 class="fs-2 fw-bold" style="color:#FF9900;font-size:2.1rem;">Foodify</h2>
+                </div>
+                <div class="row ">
+                    <div class="col-3">
+                        <div>
+                            <i class="fs-2 fa-brands fa-facebook" style="color:#FF9900"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <i class="fs-2 fa-brands fa-facebook-messenger" style="color:#FF9900"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <i class="fs-2 fa-brands fa-instagram" style="color:#FF9900"></i>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div>
+                            <i class="fs-2 fa-brands fa-whatsapp" style="color:#FF9900"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-3 col-lg-2">
+                <div class="row">
+                    <a href="" style="font-weight:600" class="fw-bold text-black fs-3">Contact us</a>
+                </div>
+                <div class="row mt-4">
+                    <ul style="font-size:20px;list-style:none ;">
+                        <li class="mb-2">114C - 108 street, Mandalay, Myanmar</li>
+                        <li class="mb-2">hello@foodify.com</li>
+                        <li class="mb-2">+959448998082</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-3 col-lg-2">
+                <div class="row">
+                    <a href="" style="font-weight:600" class="fw-bold text-black fs-3">Services</a>
+                </div>
+                <div class="row mt-4">
+                    <ul style="font-size:20px;list-style:none ;">
+                        <li class="mb-2">Payment</li>
+                        <li class="mb-2">Delivery</li>
+                        <li class="mb-2">Cooking chefs</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-3 col-lg-2">
+                <div class="row">
+                    <a href="" style="font-weight:600" class="fw-bold text-black fs-3">Opening hours</a>
+                </div>
+                <div class="row mt-4">
+                    <ul style="font-size:20px;list-style:none ;">
+                        <li class="mb-2">9:00 AM - 9:00 PM <br>Mon - Fri</li>
+                        <li class="mb-2">8:00 AM - 10:00 PM<br> Sat - Sun</li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-3 col-lg-2">
+                <div class="row">
+                    <a href="" style="font-weight:600" class="fw-bold text-black fs-3">Resources</a>
+                </div>
+                <div class="row mt-4">
+                    <ul style="font-size:20px;list-style:none ;">
+                        <li class="mb-2">Menu directory</li>
+                        <li class="mb-2">Help center</li>
+                        <li class="mb-2">Privacy & policy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row text-white px-lg-5 py-5 px-3 " style="background-color: #FF9900;">
+            <div class="col-lg-4 mb-lg-0 mb-3">
+                <h2 class="fw-bold" style="font-size:1.1rem">Copyright @2022 - Foodify</h2>
+            </div>
+            <div class="col-lg-4 mb-lg-0 mb-3">
+                <h2 class="fw-bold" style="font-size:1.1rem">Images credit to <a href="https://unsplash.com/images" target="_blink" style="text-decoration:underline">Unsplash</a></h2>
+            </div>
+            <div class="col-lg-4 mb-lg-0 mb-3">
+                <h2 class="fw-bold" style="font-size:1.1rem">Designed and Developed by May Thin Kyi</h2>
+            </div>
+        </div>
+    </footer>
+    <!--Footer End-->
+
+
+
+
+
+</body>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="./script.js">
+</script>
+
+</html>

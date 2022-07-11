@@ -1,0 +1,8 @@
+@media screen and (min-width:280px) {
+    .how-it-works {
+        margin-top: 2150px;
+    }
+    .menu input {
+        width: 260px;
+    }
+}

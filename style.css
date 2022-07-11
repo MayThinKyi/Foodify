@@ -1,0 +1,222 @@
+:root {
+    --text-color: #FF9900;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a:hover {
+    color: white;
+}
+
+
+/*Header*/
+
+header {
+    height: 100vh;
+    background-image: linear-gradient( rgba(1, 1, 1, .6), rgba(1, 1, 1, .6)), url(./images/bg.png) !important;
+    background-size: cover;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav h2 {
+    margin: 0;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 3rem;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+a,
+header nav ul li {
+    color: white;
+    text-decoration: none;
+    text-decoration-color: inherit;
+}
+
+.nav-lg ul li {
+    position: relative;
+}
+
+.nav-lg ul li a:hover {
+    color: white;
+}
+
+.nav-lg ul li::after {
+    transition: all 0.5s;
+    content: " ";
+    width: 0%;
+    background-color: #FF9900;
+    height: 3px;
+    bottom: -3px;
+    left: 0px;
+    position: absolute;
+}
+
+.nav-lg ul li:hover::after {
+    width: 100%;
+}
+
+.signInBtn {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: 1px solid #EE8F02;
+    color: #EE8F02;
+    background-color: transparent;
+    border-radius: 10rem;
+}
+
+.signInBtn:hover {
+    color: #EE8F02;
+}
+
+.signUpBtn {
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: 1px solid rgb(255, 153, 0);
+    background-color: rgb(255, 153, 0);
+    border-radius: 10rem;
+}
+
+.orderNowBtn {
+    color: white;
+    font-size: 18px;
+    background-color: rgb(255 153 0);
+    border-radius: 10rem;
+}
+
+.orderNowBtn:hover {
+    background-color: #EE8F02;
+}
+
+.signUpBtn:hover {
+    background-color: #EE8F02;
+    color: white;
+}
+
+.introContainer {}
+
+.intro {
+    font-weight: 700;
+    font-size: 4rem;
+    color: white;
+    font-size: 4rem;
+    color: white;
+}
+
+.menu input {
+    width: 280px;
+}
+
+.image {
+    position: relative;
+}
+
+.image__img {
+    display: block;
+    width: 100%;
+}
+
+.image__overlay1,
+.image__overlay2,
+.image__overlay3,
+.image__overlay4,
+.image__overlay5,
+.image__overlay6,
+.image__overlay7 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: black;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.25s;
+}
+
+.image__overlay1--blur,
+.image__overlay2--blur,
+.image__overlay3--blur,
+.image__overlay4--blur,
+.image__overlay5--blur,
+.image__overlay6--blur,
+.image__overlay7--blur {
+    backdrop-filter: blur(5px);
+}
+
+.image__overlay1,
+.image__overlay2,
+.image__overlay3,
+.image__overlay4,
+.image__overlay5,
+.image__overlay6,
+.image__overlay7 {
+    background-color: rgb(245, 242, 238, .6);
+}
+
+.image__overlay1>*,
+.image__overlay2>*,
+.image__overlay3>*,
+.image__overlay4>*,
+.image__overlay5>*,
+.image__overlay6>*,
+.image__overlay7>* {
+    transform: translateY(20px);
+    transition: transform 0.25s;
+}
+
+.image__overlay1:hover,
+.image__overlay2:hover,
+.image__overlay3:hover,
+.image__overlay4:hover,
+.image__overlay5:hover,
+.image__overlay6:hover,
+.image__overlay7:hover {
+    opacity: 1;
+}
+
+.image__overlay1:hover>*,
+.image__overlay2:hover>*,
+.image__overlay3:hover>*,
+.image__overlay4:hover>*,
+.image__overlay5:hover>*,
+.image__overlay6:hover>*,
+.image__overlay7:hover>* {
+    transform: translateY(0);
+}
+
+.image__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.image__description {
+    font-size: 1.25em;
+    margin-top: 0.25em;
+}
